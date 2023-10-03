@@ -1,0 +1,272 @@
+/* .body {
+    margin: 0;
+
+    padding: 0;
+
+    min-height: 100vh;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-family: sans-serif;
+
+    background-color: blue;
+} */
+
+.container .card .icon {
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 100%;
+    /* border-radius: 50px; */
+
+    background:blue;
+    text-align: center;
+
+    
+}
+.container .card .icon h2{
+    margin-top: 30%;
+    color: white;
+
+}
+
+.container .card .icon .fa {
+    position: absolute;
+
+    top: 50%;
+
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    font-size: 80px;
+
+    color: #fff;
+}
+
+.container .card .slide {
+    width: 300px;
+
+    height: 200px;
+
+    transition: 0.5s;
+}
+
+.container .card .slide.slide1 {
+    position: relative;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    z-index: 1;
+
+    transition: 0.7s;
+
+    transform: translateY(100px);
+}
+
+.container .card:hover .slide.slide1 {
+    transform: translateY(0px);
+}
+
+.container .card .slide.slide2 {
+    position: relative;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 20px;
+
+    box-sizing: border-box;
+
+    transition: 0.8s;
+
+    transform: translateY(-100px);
+
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.container .card:hover .slide.slide2 {
+    transform: translateY(0);
+}
+
+.container .card .slide.slide2::after {
+    content: "";
+
+    position: absolute;
+
+    width: 30px;
+
+    height: 4px;
+
+    bottom: 15px;
+
+    left: 50%;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    /* background: #2c73df; */
+    background:blue;
+}
+
+.container .card .slide.slide2 .content p {
+    margin: 0;
+
+    padding: 0;
+
+    text-align: center;
+
+    color: #414141;
+}
+
+.container .card .slide.slide2 .content h3 {
+    margin: 0 0 10px 0;
+
+    padding: 0;
+
+    font-size: 24px;
+
+    text-align: center;
+
+    color: #414141;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color:transparent;
+    /* background-clip: border-box; */
+    border-radius: 0.25rem;
+    width: 305px;
+    float: right;
+}
+.stud{
+    width: 400px;
+    height: auto;
+    background-color:white;
+   
+}
+.admin{
+     width: 400px;
+    height: auto;
+    background-color:white;
+  
+}
+.main-container{
+ width: 90%;
+ height: 50%;
+ display: flex;
+ justify-content: space-evenly;
+ background-color:white;
+ top: 70px;
+ left: 70px;
+ position: relative;
+}
+/* .icon img{
+    width: 20px;
+    height: 50px;
+} */
+
+.content .login_btn{
+    color: white;
+    background-color:blue;
+    width: 150px;
+    padding: 10px 5px;
+    border-radius: 20px;
+    text-align: center;
+    justify-content: center;
+}
+.content .login_btn a{
+    color: white;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+/* styles of admin login page  */
+.login_container{
+    width: 450px;
+    background-color: rgba(0, 0, 255, 0.732);
+    border-radius: 20px;
+    padding:  40px 0px;
+    box-shadow: 0 5px 6px rgba(0,0,0,219);
+    position: relative;
+    left: 50%;
+   
+}
+.login_container h2{
+    font-size: 30px;
+    width: 300px;
+    margin: auto;
+    margin-bottom: 30px;
+    color: white;
+    float: right;
+}
+.input-group{
+    width: 300px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.input-group label{
+    color: white;
+    font-size: 19px;
+    position: absolute;
+    top: 10px;
+    transition: 0.5s ease-in-out;
+}
+.input-group input{
+    border: none;
+    padding: 7px;
+    margin-top: 5px;
+    outline: none;
+    border-bottom:3px solid white;
+    color: white;
+    background-color:transparent;
+}
+.input-group input:focus ~label,
+.input-group input:valid ~label{
+color: white;
+top:-10px;
+font-size: 14px;
+}
+.submit-button{
+    text-align: center;
+}
+.submit-button{
+    background-color: rgba(0, 0, 255, 0.719);
+    color: white;
+    border: none;
+    padding: 10px 0;
+    margin: 15px 80px;
+    
+    border-radius: 7px;
+    width: 300px;
+    cursor: pointer;
+}
+/* styles for dashboard */
+
+ .side-menu{
+    background-color: blue;
+    width: 30%;
+    height: 100vh;
+ }

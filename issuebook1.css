@@ -1,0 +1,69 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.member-container{
+    background-color:  blue;
+    width: 20%;
+    height: 100vh;
+    color: white;
+    
+}
+.profile-pic-container{
+    background-color: transparent;
+    width: 155px;
+    height: 155px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+   
+}
+.profile-container{
+    background-color:transparent;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mem-details{
+    background-color: transparent;
+    width: 100%;
+    height: 35px;
+    text-align: center;
+    
+}
+.body-container{
+    display: flex;
+}
+.book-details-main-container{
+    background-color: green;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.book-details {
+    width: 500px;
+    height: 255px;
+    background-color: blue;
+    margin-top: 12%;
+}
+.book-details-table{
+    width: 100%;
+}
+.book-details-table,th,td{
+    border: 1px solid white;
+    border-collapse: collapse;
+    padding: 15px 10px;
+}
+.book-details-table th{
+    text-align: center;
+}
+.issued-book-table{
+    width: 100%;
+    border: 1px solid white;
+    border-collapse: collapse;
+}
+.hello{
+    color: blue;
+}

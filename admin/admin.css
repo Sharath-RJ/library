@@ -1,0 +1,584 @@
+/* .body {
+    margin: 0;
+
+    padding: 0;
+
+    min-height: 100vh;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-family: sans-serif;
+
+    background-color: blue;
+} */
+
+.container .card .icon {
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 100%;
+    /* border-radius: 50px; */
+
+    background:blue;
+    text-align: center;
+
+    
+}
+.container .card .icon h2{
+    margin-top: 30%;
+    color: white;
+
+}
+
+.container .card .icon .fa {
+    position: absolute;
+
+    top: 50%;
+
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    font-size: 80px;
+
+    color: #fff;
+}
+
+.container .card .slide {
+    width: 300px;
+
+    height: 200px;
+
+    transition: 0.5s;
+}
+
+.container .card .slide.slide1 {
+    position: relative;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    z-index: 1;
+
+    transition: 0.7s;
+
+    transform: translateY(100px);
+}
+
+.container .card:hover .slide.slide1 {
+    transform: translateY(0px);
+}
+
+.container .card .slide.slide2 {
+    position: relative;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 20px;
+
+    box-sizing: border-box;
+
+    transition: 0.8s;
+
+    transform: translateY(-100px);
+
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.container .card:hover .slide.slide2 {
+    transform: translateY(0);
+}
+
+.container .card .slide.slide2::after {
+    content: "";
+
+    position: absolute;
+
+    width: 30px;
+
+    height: 4px;
+
+    bottom: 15px;
+
+    left: 50%;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    /* background: #2c73df; */
+    background:blue;
+}
+
+.container .card .slide.slide2 .content p {
+    margin: 0;
+
+    padding: 0;
+
+    text-align: center;
+
+    color: #414141;
+}
+
+.container .card .slide.slide2 .content h3 {
+    margin: 0 0 10px 0;
+
+    padding: 0;
+
+    font-size: 24px;
+
+    text-align: center;
+
+    color: #414141;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color:transparent;
+    /* background-clip: border-box; */
+    border-radius: 0.25rem;
+    width: 305px;
+    float: right;
+}
+.stud{
+    width: 400px;
+    height: auto;
+    background-color:white;
+   
+}
+.admin{
+     width: 400px;
+    height: auto;
+    background-color:white;
+  
+}
+.main-container{
+ width: 90%;
+ height: 50%;
+ display: flex;
+ justify-content: space-evenly;
+ background-color:white;
+ top: 70px;
+ left: 70px;
+ position: relative;
+}
+/* .icon img{
+    width: 20px;
+    height: 50px;
+} */
+
+.content .login_btn{
+    color: white;
+    background-color:blue;
+    width: 150px;
+    padding: 10px 5px;
+    border-radius: 20px;
+    text-align: center;
+    justify-content: center;
+}
+.content .login_btn a{
+    color: white;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+/* styles of admin login page  */
+.login_container{
+    width: 450px;
+    background-color: rgba(0, 0, 255, 0.732);
+    border-radius: 20px;
+    padding:  40px 0px;
+    box-shadow: 0 5px 6px rgba(0,0,0,219);
+    position: relative;
+    left: 50%;
+   
+}
+.login_container h2{
+    font-size: 30px;
+    width: 300px;
+    margin: auto;
+    margin-bottom: 30px;
+    color: white;
+    float: right;
+}
+.input-group{
+    width: 300px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.input-group label{
+    color: white;
+    font-size: 19px;
+    position: absolute;
+    top: 10px;
+    transition: 0.5s ease-in-out;
+}
+.input-group input{
+    border: none;
+    padding: 7px;
+    margin-top: 5px;
+    outline: none;
+    border-bottom:3px solid white;
+    color: white;
+    background-color:transparent;
+}
+.input-group input:focus ~label,
+.input-group input:valid ~label{
+color: white;
+top:-10px;
+font-size: 14px;
+}
+.submit-button{
+    text-align: center;
+}
+.submit-button{
+    background-color: rgba(0, 0, 255, 0.719);
+    color: white;
+    border: none;
+    padding: 10px 0;
+    margin: 15px 80px;
+    
+    border-radius: 7px;
+    width: 300px;
+    cursor: pointer;
+}
+/* styles for dashboard */
+
+
+
+
+
+
+/* styles of book addding */
+.container_addbook{
+    background-color:rgba(0, 0, 0, 0.559);
+    width: 100%;
+    display:flex;
+    align-items: center;
+    color: white;
+    justify-content:space-evenly;
+    min-height: 20vh;
+    font-family: sans-serif;
+    
+    
+}
+@media screen and (max-width:900px) {
+   .container_addbook{
+    display: block;
+    
+   } 
+}
+
+@media (min-width:1025px) and (min-width:880px) {
+    ::-webkit-input-placeholder{
+        color: transparent;
+    }
+}
+.input-book{
+    position: relative;
+    
+
+}
+.input{
+    padding: 10px;
+    width: 100%;
+    max-width: 300px;
+    box-sizing: border-box;
+    outline: none;
+
+
+}
+@media screen and (max-width:900px) {
+    .input{
+        margin-top: 20px;
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+    .label{
+        display: none;
+    }
+    
+}
+.label{
+    position: absolute;
+    top:10px;
+    left: 8px;
+    font-size: 18px;
+    padding: 0px 5px;
+    color:black;
+    transition: 0.3s ease-in-out;
+    pointer-events: none;
+
+}
+.input:focus~.label,
+.input:valid~.label{
+    top: -25px;
+    color:white;
+    background-color:transparent;
+}
+
+
+
+.sub{
+  background:#1AAB8A;
+  color:#fff;
+  border:none;
+  position:relative;
+  height:60px;
+  font-size:1.6em;
+  padding:0 2em;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+}
+.sub:hover{
+  background:#fff;
+  color:#1AAB8A;
+}
+.sub:before,.sub:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: #1AAB8A;
+  transition:400ms ease all;
+}
+.sub:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+.sub:hover:before,.sub:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
+
+
+/* .sub{
+    padding: 10px;
+    width: 220px;
+    background-color: rgb(68, 68, 162);
+    color: white;
+    border: 1px solid white;
+}
+
+.sub:hover{
+    background-color: blue;
+} */
+
+/* styles of table in book management */
+.book-tab {
+
+  width: 100%;
+  background-color:white;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.book-tab .td, .book-tab .th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.book-tab .tr:nth-child(even){background-color:lightblue;}
+
+.book-tab .tr:hover {background-color:rgba(28, 28, 147, 0.278);}
+
+.book-tab .th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color:blue;
+  color: white;
+}
+/* style for issue book form */
+
+
+.main-container-issuebook{
+    width: 800px;
+    background-color:grey;
+    display: flex;
+    justify-content: space-between;
+    height: 40vh;
+}
+.container-issuebook-btn{
+    width: 700px;
+    height: 10vh;
+    
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.container-issuebook-btn input{
+    background-color:blue;
+    color: white;
+    width: 210px;
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 50px;
+}
+.book-issue-image{
+    background:transparent;
+    width: 199px;
+    height: 40vh;
+
+}
+.book-issue-image .handover{
+    width: 180px;
+    height: 35vh;
+    margin-top: 20px;
+}
+.container-of-issuebook{
+    width:500px;
+    box-sizing: border-box;
+    background-color: grey;
+    display: flex;
+    font-family: sans-serif;
+    min-height: 40vh;
+    align-items: center;
+    gap: 30px;
+    flex-direction: column;
+    justify-content: center;
+}
+.inputbox{
+    position: relative;
+    width: 300px;
+}
+.inputbox input{
+    width: 100%;
+    padding: 10px;
+    border:2px solid darkblue;
+    background-color:white;
+    border-radius: 5px;
+    outline: none;
+    color:green;
+    font-size: 1em;
+    transition: 0.5s;
+}
+.inputbox span{
+    position: absolute;
+    left: 0;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 1.1em;
+    letter-spacing: 0.2em;
+    color:black;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+.inputbox input:valid~span,
+.inputbox input:focus~span{
+    color:white;
+    transform: translateX(10px) translateY(-7px);
+    font-size: 0.65em;
+    padding: 0 10px;
+    background-color: darkblue;
+    border-left: 1px solid darkblue;
+    border-right: 1px solid darkblue;
+    letter-spacing: 0.2em;
+}
+.inputbox:nth-child(2) input:valid~span,
+.inputbox:nth-child(2) input:focus~span{
+    background-color: darkblue;
+    color: white;
+    border-radius: 2px;
+}
+.inputbox input:valid,
+.inputbox input:focus{
+    border: 1px solid darkblue;
+}
+.book_details_container{
+   background-color: blue;
+   width: 40%; 
+   height: 10%;
+   display: flex;
+   color: white;
+   margin-top: 5px;
+}
+.book_details_key{
+    width: 50%;
+     background-color: lightblue;
+    
+
+}
+.alert{
+    width: 100%;
+    height: auto;
+    background-color: red;
+    color: white;
+}
+.input-container-register{
+    width: 60%;
+    border: 5px solid black;
+    background-color: rgba(0, 0, 0, 0.433);
+    color: white;
+}
+.inputbox-container{
+    margin-top: 50px;
+}
+.form-label{
+    font-size: 20px;
+}
+.form-control{
+    border: none;
+    padding: 3px 3px;
+}
+.register-btn{
+    width: 200px;
+    padding: 10px 10px;
+    border-radius: 20px;
+    background-color: blue;
+    color: white;
+    margin-top: 50px;
+}
+.book_return_btn{
+    background-color: blue;
+    padding: 8px 15px;
+    color: white;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.button_slide {
+  color:black;
+  border: 2px solid blue;
+  border-radius: 10px;
+  padding: 11px 36px;
+  display: inline-block;
+  font-family: "Lucida Console", Monaco, monospace;
+  font-size: 14px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  box-shadow: inset 0 0 0 0 blue;
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 1.3s;
+}
+.slide_right:hover {
+  box-shadow: inset 400px 0 0 0 blue;
+}

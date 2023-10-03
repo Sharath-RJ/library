@@ -1,0 +1,133 @@
+.main-container-settings{
+    width: 80%;
+  
+    height: 50vh;
+    border: 1px solid black ;
+    position: absolute;
+    top: 30%;
+    left:12%;
+    display: flex;
+    justify-content: space-between;
+}
+.left-container,.right-container{
+
+    width: 50%;
+    height: 100%;
+    border: 1px solid black;
+}
+.theme-color,.background-color{
+    width: 100%;
+    height: 50%;
+    border: 1px solid black;
+    justify-content: center;
+    
+    align-items: center;
+}
+.background-color{
+    display: flex;
+    justify-content: space-evenly;
+}
+.background-color .dark,.background-color .light{
+    width: 200px;
+    height: 100px;
+    border: 1px solid blue;
+    
+}
+.background-color .dark{
+    background-color: rgba(0, 0, 0, 0.797);
+}
+.background-color .light{
+    background-color: grey;
+}
+.main-box{
+    position: relative;
+    width: 400px;
+    height: 60px;
+    background-color: grey;
+    margin-top: 40px;
+    margin-left: 100px;
+    
+}
+.thecard{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 1.5s ease-in;
+    background-color: yellow;
+    border-radius: 40px;
+}
+.thefront{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background: blue;
+    border-radius: 40px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.theback{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background: blue;
+    border-radius: 40px;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    transform: rotatey(180deg);
+}
+.theback input{
+    width: 50%;
+    height: 40%;
+    margin-left: 100px;
+    margin-top: 15px;
+}
+.thecard:hover{
+    transform: rotatey(180deg);
+}
+
+.nav{
+    width: 100%;
+    background-color:rgba(0, 0, 0, 0.559);
+    display: flex;
+    
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed;
+}
+.nav .logo{
+    display:  flex;
+    justify-content: center;
+    align-items: center;
+    width:150px ;
+    height: 100px;
+}
+.nav .title h1{
+    color: white;
+    letter-spacing: 3px;
+}
+.save-container{
+    width: 150px;
+    height: 100%;
+    
+    justify-content: center;
+    align-items: center;
+}
+.save-container button{
+    position: relative;
+    top: 50%;
+    left: 10%;
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+
+
+
